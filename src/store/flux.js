@@ -3,7 +3,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			peliculas: [],
 			programas:[],
-			personas: []
+			personas: [],
+			trending: []
 
 		},
 		actions: {
@@ -30,7 +31,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 			.then((response) => response.json())
 			.then((data) =>  setStore({personas: data.results}));
 		},
+		
+		loadTrending: () => {
 
+			fetch(`https://api.themoviedb.org/3/trending/all/week?api_key=66fe2d4dcf98813e405cc05181238577`)
+			.then((response) => response.json())
+			.then((data) =>  setStore({trending: data.results}));
+		},
 		
 	}
 };

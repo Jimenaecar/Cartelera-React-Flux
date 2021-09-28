@@ -7,7 +7,7 @@ import MovieDetails from "./components/MovieDetails";
 import Programas from "./components/Programas";
 import ShowDetails from "./components/ShowDetails";
 import Personas from "./components/Personas";
-import PersonasDetails from "./components/PersonasDetails"
+import PersonasDetails from "./components/PersonasDetails";
 
 
 
