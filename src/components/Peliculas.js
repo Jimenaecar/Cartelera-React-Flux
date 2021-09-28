@@ -15,7 +15,7 @@ export const Peliculas = (props) => {
     
     return ( 
         
-        <div className="" style={{margin: "3rem", marginTop:"0.5rem",marginBottom:"1rem" ,padding: "3rem" }}>
+        <div className="section" style={{margin: "3rem", marginTop:"0.5rem",marginBottom:"1rem" ,padding: "3rem" }}>
             {store.peliculas.length> 0 ? store.peliculas.map((item=>
             <div className="col-lg-3 col-auto">
             <div className="card image-container" style={{width: "18rem"}}>

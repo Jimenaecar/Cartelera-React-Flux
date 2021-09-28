@@ -3,8 +3,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			peliculas: [],
 			programs:[],
-			personas: [],
-			trending: []
+			personas: []
 
 		},
 		actions: {
@@ -13,31 +12,25 @@ const getState = ({ getStore, getActions, setStore }) => {
             //funcion de ejemplo para hacer peticiones fetch
 		loadPeliculas: () => {
                 
-			fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY_TMDB}`)
+			fetch(`https://api.themoviedb.org/3/movie/popular?api_key=66fe2d4dcf98813e405cc05181238577`)
 			.then((response) => response.json())
 			.then((data) =>  setStore({peliculas: data.results}));
 		},
 
 		loadProgramas: () => {
 
-			fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${process.env.REACT_APP_API_KEY_TMDB}`)
+			fetch(`https://api.themoviedb.org/3/tv/popular?api_key=66fe2d4dcf98813e405cc05181238577`)
 			.then((response) => response.json())
 			.then((data) =>  setStore({programas: data.results}));
 		},
 
 		loadPersonas: () => {
 
-			fetch(`https://api.themoviedb.org/3/person/popular?api_key=${process.env.REACT_APP_API_KEY_TMDB}`)
+			fetch(`https://api.themoviedb.org/3/person/popular?api_key=66fe2d4dcf98813e405cc05181238577`)
 			.then((response) => response.json())
 			.then((data) =>  setStore({personas: data.results}));
 		},
 
-		loadTrending: () => {
-
-			fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY_TMDB}`)
-			.then((response) => response.json())
-			.then((data) =>  setStore({trending: data.results}));
-		},
 		
 	}
 };
