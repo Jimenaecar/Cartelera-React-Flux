@@ -9,6 +9,7 @@ import ShowDetails from "./components/ShowDetails";
 import Personas from "./components/Personas";
 import PersonasDetails from "./components/PersonasDetails";
 import Trending from "./components/Trending";
+import Rating from "./components/Rating";
 
 
 

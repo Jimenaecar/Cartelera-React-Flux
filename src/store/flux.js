@@ -41,7 +41,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		
 		loadRating: () => {
 
-			fetch(`https://api.themoviedb.org/3/tv/top_ratedc?api_key=66fe2d4dcf98813e405cc05181238577`)
+			fetch(`https://api.themoviedb.org/3/tv/top_rated?api_key=66fe2d4dcf98813e405cc05181238577`)
 			.then((response) => response.json())
 			.then((data) =>  setStore({rating: data.results}));
 		},
