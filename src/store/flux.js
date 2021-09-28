@@ -4,8 +4,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 			peliculas: [],
 			programas:[],
 			personas: [],
-			trending: []
-
+			trending: [],
+			rating: []
 		},
 		actions: {
 			// Usa getActions para llamar una function dentro de una fuction. Te dejo un ejemplo
@@ -34,11 +34,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 		
 		loadTrending: () => {
 
-			fetch(`https://api.themoviedb.org/3/trending/all/week?api_key=66fe2d4dcf98813e405cc05181238577`)
+			fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=66fe2d4dcf98813e405cc05181238577`)
 			.then((response) => response.json())
 			.then((data) =>  setStore({trending: data.results}));
 		},
 		
+		loadRating: () => {
+
+			fetch(`https://api.themoviedb.org/3/tv/top_ratedc?api_key=66fe2d4dcf98813e405cc05181238577`)
+			.then((response) => response.json())
+			.then((data) =>  setStore({rating: data.results}));
+		},
+		
+
 	}
 };
 };

@@ -88,11 +88,6 @@ p {
     min-height: 300px;
 }
 
-html {
-    overflow: -moz-scrollbars-vertical; 
-}  
-
-
   .trendingSpace {
     display: flex;
     overflow-x: scroll;
@@ -138,7 +133,7 @@ html {
     margin: 2rem;
 }
 
-/*Efectos card y favoritos*/
+/*Efectos card*/
 .image-container {
     position: relative;
     transition: transform 0.2s;
@@ -171,15 +166,7 @@ html {
     font-weight: bold;
 }
 
-.cardAve.green{
-    color: lightgreen;
-}
-.cardAve.orange{
-    color: orange;
-}
-.cardAve.red{
-    color: red;
-}
+
 
 
 .tag{
