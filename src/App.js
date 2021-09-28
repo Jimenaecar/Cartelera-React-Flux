@@ -2,8 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./views/Home"
-import Demo from "./views/Demo"
-import Details from "./views/Details"
+import Peliculas from "./components/Peliculas";
+import MovieDetails from "./components/MovieDetails";
+
 
 
 function App() {
@@ -15,12 +16,37 @@ function App() {
           <Route exact path="/">
             <Home/>
           </Route>
-          <Route exact path="/demo">
-            <Demo/>
+          <Route exact path="peliculas">
+            <Peliculas/>  
           </Route>
-          <Route exact path="/demo/:id">
-            <Details/>
+           <Route exact path="/movies/:id">
+            <MovieDetails/>   
           </Route>
+          {/*
+          <Route exact path="/programas-television">
+            <Programas/>     
+          </Route>
+          <Route exact path="/show/:idTv">
+            <MovieDetails/>   
+          </Route>
+          <Route exact path="/personas">
+            <Personas/>   
+          </Route>
+          <Route exact path="/personas/:idPers">
+            <PersonasDetails/>    
+          </Route>
+          <Route exact path="/tendencias">
+            <Trending/>  
+          </Route>
+          <Route exact path="/tendencias/:idTrend">
+            <TrendDetails/>  
+          </Route>
+          <Route exact path="/popular">
+            <RatingTv/>  
+          </Route>
+          <Route exact path="/popular/:idRate">
+            <RateDetails/>  
+          </Route>  */}
           <Route to="*">
             <h2>Not found - 404</h2>
           </Route>

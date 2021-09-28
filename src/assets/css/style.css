@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&family=Open+Sans:wght@700&display=swap');
+ 
+
+*{
+    box-sizing: border-box;
+   
+}
+
+/*General*/
+:root{
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+    --gutter: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+   
+    text-decoration: none;   
+}
+
+p {
+    font-family: 'Open Sans Regular', sans-serif;
+    color:black;
+
+}
+
+.contenedor-pelis{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Navbar*/
+
+.navbar{
+    font-family: 'Montserrat Bold', sans-serif;
+    padding: 2rem;
+}
+
+.navText{
+    padding: 0 2rem;
+    text-decoration: none;
+    color:white;
+
+}
+
+.navText:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+
+/*Carousel*/
+
+.carouselHome{
+    width: 100%;
+}
+
+/* CardSlide*/
+
+.cards-container{
+    width: 20%;
+    height: auto;
+    float: left;
+    margin: 0.2rem 1rem;
+}
+
+
+
+
+
+.card-cont {
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .card-block {
+    min-height: 300px;
+}
+
+html {
+    overflow: -moz-scrollbars-vertical; 
+}  
+
+
+  .trendingSpace {
+    display: flex;
+    overflow-x: scroll;
+    list-style: none;
+    color: black;
+    justify-content: center;
+   
+}
+
+  .all-container {
+    
+    flex-direction: row;
+    width: 80%;
+    margin: 2rem auto;
+    scroll-snap-type: x proximity;
+  }
+
+/*Card Principal*/
+
+.card{
+    margin-bottom: 2rem;
+}
+
+.cardMovies, .cardTv, .cardPeople {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cardInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    
+}
+
+/*Efectos card y favoritos*/
+.image-container {
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.image-container:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    bottom: 0;
+    padding: 20px;
+    
+}
+.cardAve {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.25rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.cardAve.green{
+    color: lightgreen;
+}
+.cardAve.orange{
+    color: orange;
+}
+.cardAve.red{
+    color: red;
+}
+
+
+.tag{
+    background-color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.rowCard{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.tag.green{
+    color: green;
+}
+.tag.orange{
+    color: orange;
+}
+.tag.red{
+    color: red;
+}
