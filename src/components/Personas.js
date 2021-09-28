@@ -19,9 +19,9 @@ export const Personas = (props) => {
             {store.personas.length> 0 ? store.personas.map((item=>
             <div className="col-lg-3 col-auto">
             <div className="card image-container" style={{width: "18rem"}}>
-                <img src= {'https://image.tmdb.org/t/p/w500/'+item.poster_path} className="card-img-top" alt=""/> 
+                <img src= {'https://image.tmdb.org/t/p/w500/'+item.profile_path} className="card-img-top" alt=""/> 
             <div className="card-body cardInfo overlay d-flex align-items-center">
-              <Link style={{textDecoration: 'none', color:"white" }} to={"/personas/"+item.id}> <h5 className="card-title cardText" style={{fontWeight:"bolder"}}>{item.title}</h5></Link>
+              <Link style={{textDecoration: 'none', color:"white" }} to={"/personas/"+item.id}> <h5 className="card-title cardText" style={{fontWeight:"bolder"}}>{item.name}</h5></Link>
                 
             </div>
           </div>
