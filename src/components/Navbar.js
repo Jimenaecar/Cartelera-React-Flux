@@ -6,7 +6,7 @@ const Navbar = () => {
 
 <nav className="navbar navbar-expand-lg bg-dark" style={{fontFamily:"Montserrat"}}>
   <div className="container-fluid">
-  <a className="navbar-brand"><Link to="/" className="text-white" className="navText" href="">Home</Link></a>
+  <a className="navbar-brand"><Link to="/" className="text-white" className="navText" href="">CinemaBox</Link></a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,10 +25,6 @@ const Navbar = () => {
         <a className="nav-link"><Link to="/trending" className="nav-link " className="navText" href="#">Popular</Link></a>
         </li>
       </ul>
-      <form className="d-flex" style={{fontFamily:"Montserrat",fontWeight:"bolder"}}>
-        <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
-        <button className="btn btn-outline-success"  type="submit">Buscar</button>
-      </form>
     </div>
   </div>
 </nav>        
