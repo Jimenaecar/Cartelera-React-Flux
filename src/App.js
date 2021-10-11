@@ -19,25 +19,25 @@ function App() {
     <Router>
       <Navbar/>
       <Switch>
-          <Route exact path="/">
+          <Route exact path="/Cartelera-React-Flux">
             <Home/>
           </Route>
-          <Route exact path="/peliculas">
+          <Route exact path="Cartelera-React-Flux/peliculas">
             <Peliculas/>  
           </Route>
-           <Route exact path="/movies/:id">
+           <Route exact path="Cartelera-React-Flux/movies/:id">
             <MovieDetails/>   
           </Route>
-          <Route exact path="/programas-television">
+          <Route exact path="Cartelera-React-Flux/programas-television">
             <Programas/>     
           </Route>
-          <Route exact path="/show/:id">
+          <Route exact path="Cartelera-React-Flux/show/:id">
             <ShowDetails/>   
           </Route>
-         <Route exact path="/personas">
+         <Route exact path="Cartelera-React-Flux/personas">
             <Personas/>   
           </Route>
-          <Route exact path="/personas/:id">
+          <Route exact path="Cartelera-React-Flux/personas/:id">
             <PersonasDetails/>    
           </Route>
           {/* <Route exact path="/tendencias">
